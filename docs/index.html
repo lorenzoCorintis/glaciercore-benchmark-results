@@ -28,7 +28,7 @@
 		var performance_data = [];
 
 		function fetch_data(filename) {
-			fetch('https://raw.githubusercontent.com/FEniCS/performance-test-results/main/results/' + filename)
+			fetch('https://raw.githubusercontent.com/lorenzoCorintis/glaciercore-benchmark-results/main/results/' + filename)
 				.then((response) => {
 					return response.json();
 				})
@@ -51,7 +51,7 @@
 
 		function page_boot() {
 			// Get directory listing and fetch data
-			fetch('https://api.github.com/repos/FEniCS/performance-test-results/contents/results')
+			fetch('https://api.github.com/repos/lorenzoCorintis/glaciercore-benchmark-results/contents/results')
 				.then((response) => {
 					return response.json();
 				})
